@@ -11,13 +11,22 @@ package com.mycompany.exo;
  */
 public class DessinEtoile {
     
-    public static String dessinEtoile() {
-    String etoiles = "*\n" + "**\n" + "***\n" + "****\n" + "*****\n" + "******\n";
+    public void dessinEtoile() {
+    String etoiles = "*";
+    
+    for (int i = 0; i < 6; i++){
+       for (int j = 0; j <i+1; j++){
+           System.out.print(etoiles);
+       }
+        System.out.println();
+    }
    
-    return etoiles;
 }   
     public static void main(String[] args) {
-        String etoiles = "*\n" + "**\n" + "***\n" + "****\n" + "*****\n" + "******\n";
-        System.out.println(etoiles);
+        //String etoiles = "*\n" + "**\n" + "***\n" + "****\n" + "*****\n" + "******\n";
+        //System.out.println(etoiles);
+        String etoiles = "*";
+        DessinEtoile de = new DessinEtoile();
+        //String result = de.de
     }
 }

@@ -12,9 +12,24 @@ package com.mycompany.exo;
 public class tableauSomme {
     
        public static void main(String[] args) {
-           System.out.println("Calculsomme");
+           int tableau[] = {5,78,23,13,12,56};
+           
+           //int result = calculSomme(tableau);
+           
+           //System.out.println(result);
     }
  
+       public int calculSomme(int tableau[]) {
+           int sommeTableau = 0;
+           int i = 0;
+           //int tableau[] = {5,78,23,13,12,56};
+           
+           for (i = 0; i<tableau.length; i++) {
+               sommeTableau += tableau[i];
+           }
+           
+           return sommeTableau;
+       }
     
 }
    

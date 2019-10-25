@@ -11,10 +11,10 @@ package com.mycompany.exo;
  */
 public class DessinEtoile {
     
-    public void dessinEtoile() {
+    public void dessinEtoile(int nbEtoile) {
     String etoiles = "*";
     
-    for (int i = 0; i < 6; i++){
+    for (int i = 0; i < nbEtoile; i++){
        for (int j = 0; j <i+1; j++){
            System.out.print(etoiles);
        }
